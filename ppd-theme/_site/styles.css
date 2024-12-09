@@ -1,0 +1,13 @@
+/* css styles */
+// Nav and footer
+
+/* Navbar */
+
+.navbar {
+  box-shadow:
+    0 0 0.2rem #0000001a,
+    0 0.1rem 0.4rem #0003;
+  transition:
+    transform 0.25s cubic-bezier(0.1, 0.7, 0.1, 1),
+    box-shadow 0.25s;
+}
