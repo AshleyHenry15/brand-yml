@@ -2,7 +2,8 @@ project:
   type: website
 
 website:
-  title: "posit Documentation"
+  title: "Posit Docs"
+  favicon: logos/favicon.svg
   navbar:
     left:
       - text: "Home"

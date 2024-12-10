@@ -1,5 +1,6 @@
 logo:
-  small: logos/favicon.svg
+  small: logos/posit-icon-fullcolor.svg
+  medium:
 color:
   palette:
     blue: "#447099"
