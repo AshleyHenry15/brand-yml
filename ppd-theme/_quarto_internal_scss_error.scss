@@ -16,11 +16,7 @@
 
 
 
-
-
 // quarto-scss-analysis-annotation { "origin": "'use' section from Quarto" }
-
-
 
 
 
@@ -42,12 +38,9 @@
 
 // quarto-scss-analysis-annotation { "origin": "'use' section from user-defined SCSS" }
 
-@import url('https://fonts.bunny.net/css?family=Source-Code-Pro:400i,700i,400,700&display=swap');
-@import url('https://fonts.bunny.net/css?family=Open-Sans:400i,700i,400,700&display=swap');
+
 
 // quarto-scss-analysis-annotation { "origin": "'functions' section from format" }
-
-
 
 
 
@@ -489,8 +482,6 @@ $_luminance-list: .0008 .001 .0011 .0013 .0015 .0017 .002 .0022 .0025 .0027 .003
 
 
 // quarto-scss-analysis-annotation { "origin": "'functions' section from Quarto" }
-
-
 
 // Our website navbar implementation will shift the body down
 // to accomodate the navbar, but the height is variable. As a result
@@ -1041,6 +1032,117 @@ $theme-name: null !default;
 // quarto-scss-analysis-annotation { "origin": "Defaults from user-defined SCSS" }
 
 
+// import shared colors
+@import '_posit-colors';
+
+/*-- scss:variables --*/
+$primary: $posit-orange;
+$dark-md-body: $posit-light-gray-1;
+$dark-md-background: #000000;
+
+//$body-color: $posit-green !default;
+$body-bg: $dark-md-background !default; // dark mode change
+
+$body-color: #d5d7db;
+
+// Feature preview heading colors
+$preview-header: $posit-orange; /* posit orange, contrast: 8.45 */
+$preview-header-border: darken($preview-header, 5%);
+
+
+/* Code block background */
+$code-block-bg: #000000;
+
+// Nav
+
+.navbar {
+  background-color:#15181e !important;
+  color: #dee2e6;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: var(--bs-nav-tabs-link-active-color);
+  
+.nav-link:hover {
+  color: $posit-orange !important;
+}
+
+// Callouts
+
+.callout.callout-style-default:not(.no-icon) div.callout-title-container {
+  color: #ffffff !important;
+}
+
+div.callout.callout-style-default > div.callout-header {
+  opacity: none;
+}
+
+/* Note */
+
+div.callout-note.callout {
+  border-left-color: $posit-dark-blue-2 !important;
+  border-right: 1px solid $posit-dark-blue-2 !important;
+  border-top: 1px solid $posit-dark-blue-2 !important;
+  border-bottom: 1px solid $posit-dark-blue-2 !important;
+}
+
+div.callout-note .callout-icon::before {
+  // base64 -i _extensions/posit-docs/assets/images/info-circle-dm.svg
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWluZm8tY2lyY2xlIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik04IDE1QTcgNyAwIDEgMSA4IDFhNyA3IDAgMCAxIDAgMTRtMCAxQTggOCAwIDEgMCA4IDBhOCA4IDAgMCAwIDAgMTYiLz4KICA8cGF0aCBkPSJtOC45MyA2LjU4OC0yLjI5LjI4Ny0uMDgyLjM4LjQ1LjA4M2MuMjk0LjA3LjM1Mi4xNzYuMjg4LjQ2OWwtLjczOCAzLjQ2OGMtLjE5NC44OTcuMTA1IDEuMzE5LjgwOCAxLjMxOS41NDUgMCAxLjE3OC0uMjUyIDEuNDY1LS41OThsLjA4OC0uNDE2Yy0uMi4xNzYtLjQ5Mi4yNDYtLjY4Ni4yNDYtLjI3NSAwLS4zNzUtLjE5My0uMzA0LS41MzN6TTkgNC41YTEgMSAwIDEgMS0yIDAgMSAxIDAgMCAxIDIgMCIvPgo8L3N2Zz4=") !important;
+}
+
+div.callout-note.callout-style-default > .callout-header {
+  background-color: $posit-blue !important;
+}
+
+/* Warning */
+
+div.callout-warning.callout {
+  border-left-color: $posit-dark-orange-2 !important;
+  border-right: 1px solid $posit-dark-orange-2 !important;
+  border-top: 1px solid $posit-dark-orange-2 !important;
+  border-bottom: 1px solid $posit-dark-orange-2 !important;
+}
+
+div.callout-warning .callout-icon::before {
+  // base64 -i _extensions/posit-docs/assets/images/exclamation-triangle-dm.svg
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWV4Y2xhbWF0aW9uLXRyaWFuZ2xlIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik03LjkzOCAyLjAxNkEuMTMuMTMgMCAwIDEgOC4wMDIgMmEuMTMuMTMgMCAwIDEgLjA2My4wMTYuMTUuMTUgMCAwIDEgLjA1NC4wNTdsNi44NTcgMTEuNjY3Yy4wMzYuMDYuMDM1LjEyNC4wMDIuMTgzYS4yLjIgMCAwIDEtLjA1NC4wNi4xLjEgMCAwIDEtLjA2Ni4wMTdIMS4xNDZhLjEuMSAwIDAgMS0uMDY2LS4wMTcuMi4yIDAgMCAxLS4wNTQtLjA2LjE4LjE4IDAgMCAxIC4wMDItLjE4M0w3Ljg4NCAyLjA3M2EuMTUuMTUgMCAwIDEgLjA1NC0uMDU3bTEuMDQ0LS40NWExLjEzIDEuMTMgMCAwIDAtMS45NiAwTC4xNjUgMTMuMjMzYy0uNDU3Ljc3OC4wOTEgMS43NjcuOTggMS43NjdoMTMuNzEzYy44ODkgMCAxLjQzOC0uOTkuOTgtMS43Njd6Ii8+CiAgPHBhdGggZD0iTTcuMDAyIDEyYTEgMSAwIDEgMSAyIDAgMSAxIDAgMCAxLTIgME03LjEgNS45OTVhLjkwNS45MDUgMCAxIDEgMS44IDBsLS4zNSAzLjUwN2EuNTUyLjU1MiAwIDAgMS0xLjEgMHoiLz4KPC9zdmc+") !important;
+}
+
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: $posit-dark-orange-1 !important;
+}
+
+/* Important */
+
+div.callout-important.callout {
+  border-left-color: $posit-dark-burgundy-2 !important;
+  border-right: 1px solid $posit-dark-burgundy-2 !important;
+  border-top: 1px solid $posit-dark-burgundy-2 !important;
+  border-bottom: 1px solid $posit-dark-burgundy-2 !important;
+}
+
+div.callout-important .callout-icon::before {
+  // base64 -i _extensions/posit-docs/assets/images/exclamation-circle-dm.svg
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWV4Y2xhbWF0aW9uLWNpcmNsZSIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNOCAxNUE3IDcgMCAxIDEgOCAxYTcgNyAwIDAgMSAwIDE0bTAgMUE4IDggMCAxIDAgOCAwYTggOCAwIDAgMCAwIDE2Ii8+CiAgPHBhdGggZD0iTTcuMDAyIDExYTEgMSAwIDEgMSAyIDAgMSAxIDAgMCAxLTIgME03LjEgNC45OTVhLjkwNS45MDUgMCAxIDEgMS44IDBsLS4zNSAzLjUwN2EuNTUyLjU1MiAwIDAgMS0xLjEgMHoiLz4KPC9zdmc+") !important;
+}
+
+div.callout-important.callout-style-default > .callout-header {
+  background-color: $posit-burgundy !important;
+}
+
+// Code blocks
+.code-with-filename strong {
+  color: #ffffff;
+  border: none !important;
+}
+
+div.sourceCode {
+  background-color: #1a1a1a;
+  border: 1px solid #dee2e6 !important;
+  border-radius: .25rem;
+}
+
 // Heading font size customization
 $h1-font-size: 2rem !default;
 $h2-font-size: 1.65rem !default;
@@ -1097,65 +1199,15 @@ $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
 
-$btn-code-copy-color: #5E5E5E !default;
-$btn-code-copy-color-active: #4758AB !default;
-/* typography variables from _brand.yml */
-// quarto-scss-analysis-annotation { "action": "push", "origin": "_brand.yml typography" }
-$font-family-monospace: Source Code Pro !default;
-$headings-font-weight: regular !default;
-$h1h2h3-font-weight: regular !default;
-$presentation-heading-font-weight: regular !default;
-$font-family-base: Open Sans !default;
-$mainFont: Open Sans !default;
-$mermaid-font-family: Open Sans !default;
-// quarto-scss-analysis-annotation { "action": "pop" }
-/* color variables from _brand.yml */
-// quarto-scss-analysis-annotation { "action": "push", "origin": "_brand.yml color" }
-$brand-blue: #447099 !default;
-$brand-orange: #ee6331 !default;
-$brand-teal: #419599 !default;
-$brand-green: #729943 !default;
-$brand-burgundy: #9a4665 !default;
-$brand-purple: #9a4665 !default;
-$brand-gray: #404041 !default;
-$brand-black: #151515 !default;
-$brand-white: #FFFFFF !default;
-$foreground: #151515 !default;
-$background: #FFFFFF !default;
-$primary: #447099 !default;
-$secondary: #404041 !default;
-$info: #419599 !default;
-$success: #729943 !default;
-$warning: #ee6331 !default;
-$danger: #9a4665 !default;
-$pre-color: #151515 !default;
-$body-bg: #FFFFFF !default;
-$body-color: #151515 !default;
-$body-secondary-color: #404041 !default;
-$body-secondary: #404041 !default;
-$body-tertiary: #404041 !default;
-// quarto-scss-analysis-annotation { "action": "pop" }
-$theme: "brand" !default;
-/* Bootstrap color variables from _brand.yml */
-// quarto-scss-analysis-annotation { "action": "push", "origin": "_brand.yml color.palette" }
-$blue: #447099 !default;
-$orange: #ee6331 !default;
-$teal: #419599 !default;
-$green: #729943 !default;
-$purple: #9a4665 !default;
-$black: #151515 !default;
-$white: #FFFFFF !default;
-// quarto-scss-analysis-annotation { "action": "pop" }
-/* Bootstrap variables from _brand.yml */
-// quarto-scss-analysis-annotation { "action": "push", "origin": "_brand.yml defaults.bootstrap.defaults" }
-$navbar-brand { color: $brand-blue } !default;
-// quarto-scss-analysis-annotation { "action": "pop" }
+$btn-code-copy-color: #f8f8f2 !default;
+$btn-code-copy-color-active: #ffa07a !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
 $code-copy-selector: "pre.sourceCode:hover > " !default;
 $code-white-space: pre !default;
 $tbl-cap-location: top !default;
+$sidebar-border: false !default;
 $sidebar-bg: if(variable-exists(body-bg), $body-bg, #fff) !default;
 // Default the theme name
 $theme-name: if(variable-exists(theme), $theme, "");
@@ -1479,8 +1531,6 @@ $navbar-title-order: if($navbar-toggle-position == "left", 2, 1) !default;
 $navbar-search-order: if($navbar-toggle-position == "left", 4, 3) !default;
 $navbar-tools-order: if($navbar-toggle-position == "left", 3, 2) !default;
 $navbar-menu-order: if($navbar-toggle-position == "left", 20, 20) !default;
-
-
 
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from the format SCSS" }
@@ -3275,11 +3325,7 @@ $pre-line-height:                   $line-height-base !default;
 
 
 
-
-
 // quarto-scss-analysis-annotation { "origin": "'mixins' section from format" }
-
-
 
 
 
@@ -3375,8 +3421,6 @@ $pre-line-height:                   $line-height-base !default;
 
 
 // quarto-scss-analysis-annotation { "origin": "'mixins' section from Quarto" }
-
-
 
 
 
@@ -5231,8 +5275,6 @@ $grid-default-toc-mid-body: minmax(
 
 
 
-
-
 @import "mixins/banner";
 @include bsBanner("");
 
@@ -6382,8 +6424,6 @@ $bslib-sidebar-column-sidebar: Min(calc(100% - var(--bslib-sidebar-icon-size)), 
 
 
 // quarto-scss-analysis-annotation { "origin": "'rules' section from Quarto" }
-
-
 
 
 .quarto-container {
@@ -12610,20 +12650,6 @@ a.external:after:hover {
 
 // quarto-scss-analysis-annotation { "origin": "'rules' section from user-defined SCSS" }
 
-/* color CSS variables from _brand.yml */
-// quarto-scss-analysis-annotation { "action": "push", "origin": "_brand.yml color" }
-:root {
-  --brand-blue: #447099;
-  --brand-orange: #ee6331;
-  --brand-teal: #419599;
-  --brand-green: #729943;
-  --brand-burgundy: #9a4665;
-  --brand-purple: #9a4665;
-  --brand-gray: #404041;
-  --brand-black: #151515;
-  --brand-white: #FFFFFF;
-}
-// quarto-scss-analysis-annotation { "action": "pop" }
 
 /* Title Banner */
 .quarto-title-banner {

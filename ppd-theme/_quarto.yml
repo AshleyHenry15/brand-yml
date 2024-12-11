@@ -4,6 +4,7 @@ project:
 website:
   title: "Posit Docs"
   favicon: logos/favicon.svg
+  bread-crumbs: true
   navbar:
     left:
       - text: "Home"
