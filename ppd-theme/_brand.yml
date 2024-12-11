@@ -1,6 +1,5 @@
-logo:
-  small: logos/posit-icon-fullcolor.svg
-  medium:
+#logo:
+ # small: logos/posit-icon-fullcolor.svg
 color:
   palette:
     blue: "#447099"

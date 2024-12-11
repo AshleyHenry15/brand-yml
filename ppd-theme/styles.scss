@@ -3,7 +3,6 @@
 // import font
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-
 // Feature preview heading colors
 $preview-header: #ee6331; /* posit orange, contrast: 8.45 */
 $preview-header-border: darken($preview-header, 5%);
@@ -24,6 +23,106 @@ $preview-header-border: darken($preview-header, 5%);
     box-shadow 0.25s;
 }
 
+.navbar .nav-link {
+  font-size: .88rem;
+}
+
+/* Footer */
+
 .nav-footer {
   border-top: solid #0000001a 0.01em;
+}
+
+/* Sidebar */
+
+.sidebar-item.sidebar-item-section ul li .menu-text {
+  font-size: 96%;
+}
+
+div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+    font-weight: 600;
+}
+
+/* Code blocks */
+
+.code-with-filename .code-with-filename-file {
+  padding: .25rem;
+  box-shadow: 0px 0px 2px rgba(5, 10, 15, .14), 0px 2px 4px rgba(29, 31, 33, .16);
+}
+
+div.sourceCode, pre.console {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(5, 10, 15, 0.14), 0px 2px 4px rgba(29, 31, 33, .16);
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  padding: .25rem;
+}
+
+// Specialty headers
+
+/* the feature PREVIEW header */
+.preview-header > h1:after,
+.preview-header > h2:after,
+.preview-header > h3:after,
+.preview-header > h4:after,
+header h1 .preview-header {
+  content: "Preview feature";
+  margin-left: 1em;
+  position: relative;
+  border-radius: 50rem !important;
+  top: -0.5em;
+}
+
+.preview-header > h1:after,
+.preview-header > h2:after,
+.preview-header > h3:after,
+.preview-header > h4:after,
+header h1 .preview-header,
+div span.preview-feature {
+  color: $preview-header;
+  border: 1px solid $preview-header-border;
+  font-weight: 500;
+  font-size: 9pt !important;
+  padding: 0rem 0.4rem;
+}
+
+div span.preview-feature {
+  margin-left: 1em;
+  text-transform: uppercase;
+}
+
+// Specialty lists
+
+/* Callout steps for images with multiple items/steps shown in single image */
+
+ol.groovyAlpha {
+  list-style: none;
+  counter-reset: list-counter;
+}
+
+ol.groovyAlpha li {
+  counter-increment: list-counter;
+}
+
+ol.groovyAlpha li > p:before {
+  content: counter(list-counter, lower-alpha);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 10px;
+  color: #fff;
+  background-color: #fc403b;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+// Mermaid diagrams
+
+#mermaid-1 .nodeLabel {
+  font-weight: 700!important;
 }
