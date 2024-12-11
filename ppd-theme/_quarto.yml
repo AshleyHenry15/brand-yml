@@ -53,7 +53,9 @@ website:
 
 format:
   html:
-    theme: [brand, styles.scss]
+    theme: 
+      light: [brand, styles.scss]
+      dark: [brand, theme-dark.scss]
     toc: true
     link-external-icon: true
     link-external-newwindow: true

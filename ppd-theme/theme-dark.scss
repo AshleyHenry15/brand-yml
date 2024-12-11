@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+
+// import shared colors
+@import '_posit-colors';
+
+/*-- scss:variables --*/
+$primary: $posit-blue;
+$dark-md-body: $posit-light-gray-1;
+$dark-md-background: #000000;
+
+//$body-color: $posit-green !default;
+$body-bg: $dark-md-background !default; // dark mode change
+
+$body-color: #efeff1;
+
+// Feature preview heading colors
+$preview-header: $posit-orange; /* posit orange, contrast: 8.45 */
+$preview-header-border: darken($preview-header, 5%);
+
+
+.navbar {
+  background-color:#15181e !important;
+  color: #dee2e6;
+}
