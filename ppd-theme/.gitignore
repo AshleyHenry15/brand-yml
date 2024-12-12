@@ -1,1 +1,4 @@
 /.quarto/
+_site/*
+ppd-theme/_site/*
+_publish.yml
