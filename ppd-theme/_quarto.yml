@@ -33,7 +33,7 @@ website:
             - text: Installation
               file: install.qmd
             - text: Duplicate
-              file: install.qmd
+              file: user.qmd
             - text: Duplicate
               file: install.qmd
 

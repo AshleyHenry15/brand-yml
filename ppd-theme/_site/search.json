@@ -101,8 +101,9 @@
     "section": "",
     "text": "This is a stub page modeling a top-level collection of documentation, such as a product user guide.",
     "crumbs": [
-      "User Guide",
-      "Posit Product User Guide"
+      "Admin Guide",
+      "Subsection",
+      "Duplicate"
     ]
   },
   {
@@ -112,8 +113,9 @@
     "section": "Table",
     "text": "Table\nThis table uses the bootstrap {.striped .hover} classes:\n\nThis table is using the striped + hover Bootstrap classes\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication\n\n\n\nThis table is not using any bootstrap classes:\n\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication",
     "crumbs": [
-      "User Guide",
-      "Posit Product User Guide"
+      "Admin Guide",
+      "Subsection",
+      "Duplicate"
     ]
   },
   {
@@ -123,8 +125,9 @@
     "section": "Images",
     "text": "Images\nThe image caption, title, and alt text can all be different.\n\n\n\nThis is a test image",
     "crumbs": [
-      "User Guide",
-      "Posit Product User Guide"
+      "Admin Guide",
+      "Subsection",
+      "Duplicate"
     ]
   }
 ]

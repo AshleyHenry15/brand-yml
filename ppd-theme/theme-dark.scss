@@ -36,6 +36,12 @@ $code-block-bg: #000000;
   color: $posit-orange !important;
 }
 
+// Sidebar
+
+div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+  background-color: #2b303c;
+}
+
 // Tab - Pills
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
