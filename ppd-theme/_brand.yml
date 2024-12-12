@@ -12,6 +12,7 @@ color:
     black: "#151515"
     white: "#FFFFFF"
     dark-gray: "#212529"
+    dark-blue: "#305775"
   foreground: dark-gray
   background: white
   primary: blue
@@ -38,9 +39,9 @@ defaults:
   bootstrap:
     defaults: # defaults also supports a string as its value
       link-decoration: underline
-      navbar-fg: "#888888"
+      navbar-fg: "#202020"
       navbar-bg: "#fff"
-      navbar-hl: "#000000"
+      navbar-hl: $brand-blue
       navbar-brand: "#000"
       navbar-brand-hl: "navbar-brand"
       callout-color-note: $brand-blue

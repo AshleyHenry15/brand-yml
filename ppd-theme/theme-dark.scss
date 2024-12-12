@@ -14,7 +14,7 @@ $body-bg: $dark-md-background !default; // dark mode change
 $body-color: #d5d7db;
 
 // Feature preview heading colors
-$preview-header: $posit-orange; /* posit orange, contrast: 8.45 */
+$preview-header: $posit-red; /* posit orange, contrast: 8.45 */
 $preview-header-border: darken($preview-header, 5%);
 
 
@@ -116,4 +116,10 @@ div.sourceCode {
   background-color: #1a1a1a;
   border: 1px solid #dee2e6 !important;
   border-radius: .25rem;
+}
+
+// Footnote link
+
+.footnote-back {
+  color: $posit-light-blue-2;
 }
