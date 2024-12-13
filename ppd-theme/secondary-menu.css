@@ -1,9 +1,7 @@
 @media only screen and (min-width:992px) {
   .dropdown-menu {
     flex-direction: row;
-    padding-left: 26px;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding: 3px 0 3px 26px !important;
     width: 100vw;
     position: fixed !important;
     display: flex !important;

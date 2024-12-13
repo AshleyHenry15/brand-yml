@@ -22,17 +22,13 @@ $preview-header-border: darken($preview-header, 5%);
     box-shadow 0.25s;
 }
 
-.navbar .nav-link {
-  font-size: .88rem;
-}
-
 // secondary navigation styling
 
 @media only screen and (min-width:992px) {
 
   ul.dropdown-menu.dropdown-menu-end.show {
     flex-direction: row;
-    padding: 5px 0 5px 26px !important;
+    padding: 3px 0 3px 26px !important;
     width: 100vw;
     position: fixed;
     display: flex;
@@ -45,7 +41,6 @@ $preview-header-border: darken($preview-header, 5%);
     border-bottom: 0px;
     border-radius: 0%;
     background-color: $posit-blue;
-    background: linear-gradient(0.25turn, #0088da, #007BC2);
   }
 
   .dropdown-item:hover,

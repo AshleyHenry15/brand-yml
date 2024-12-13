@@ -8,3 +8,4 @@ _site/
 .DS_Store
 _publish.yml
 __pycache__/
+ppd-theme/_site/*
