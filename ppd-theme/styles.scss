@@ -34,6 +34,13 @@ $preview-header-border: darken($preview-header, 5%);
   border-top: solid #0000001a 0.01em;
 }
 
+/* Posit icon fullcolor */
+#footer-right-posit-logo {
+  width: 16px;
+  margin-left: -20px !important;
+  margin-top: -3px;
+}
+
 /* Sidebar */
 
 .sidebar-item.sidebar-item-section ul li .menu-text {
@@ -41,10 +48,11 @@ $preview-header-border: darken($preview-header, 5%);
 }
 
 div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
-    background-color: #D1DBE5;
-    border-radius: 5px;
-    margin-bottom: 2px;
-    padding: 6px;
+  background-color: #F0F0F2;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-left: -2px;
+  padding: 6px;
 }
 
 /* Code blocks */

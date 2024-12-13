@@ -6,6 +6,7 @@ website:
   favicon: logos/favicon.svg
   bread-crumbs: true
   navbar:
+    logo: logos/posit-icon-fullcolor.svg
     left:
       - text: "Home"
         href: index.qmd
@@ -51,6 +52,17 @@ website:
       Copyright &copy; 2000-2025 Posit Software, PBC. All Rights Reserved.
     center: |
       Posit PRODUCT 12345
+    right:
+      - icon: question-circle-fill
+        aria-label: 'Link to Posit Support'
+        href: "https://support.posit.co/hc/en-us"
+      - icon: lightbulb-fill
+        aria-label: 'Link to Posit Solutions'
+        href: "https://solutions.posit.co/"
+      - text: "<img alt='Link to Posit Documentation' src='assets/images/posit-guide-ltmd.svg' id='footer-right-logo'>"
+        href: "https://docs.posit.co/"
+      - text: "<img alt='Link to main Posit site' src='assets/images/posit-icon-fullcolor.svg' id='footer-right-posit-logo'>"
+        href: "https://posit.co/"
 
 format:
   html:
