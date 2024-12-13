@@ -8,19 +8,21 @@ website:
   navbar:
     logo: logos/posit-icon-fullcolor.svg
     left:
-      - text: "Home"
+      - text: Home
         href: index.qmd
-      - text: "Admin Guide"
-        file: admin.qmd
-      - text: "User Guide"
-        file: user.qmd
+      - text: Guides
+        menu:
+          - text: Admin
+            href: admin.qmd
+          - text: User Guide
+            href: user.qmd
     right:
-      - text: "docs.posit.co"
-        href: "https://docs.posit.co"
-      - text: "Posit Support"
-        href: "https://support.posit.co/hc/en-us/"
+      - text: docs.posit.co
+        href: https://docs.posit.co
+      - text: Posit Support
+        href: https://support.posit.co/hc/en-us/
   sidebar:
-    - title: "Admin Guide"
+    - title: Admin Guide
       contents:
         - admin.qmd
         - section: Subsection

@@ -1,13 +1,11 @@
 /*-- scss:defaults --*/
 
-
 // import shared colors
 @import '_posit-colors';
 
 // Feature preview heading colors
 $preview-header: $posit-red;
 $preview-header-border: darken($preview-header, 5%);
-
 
 // CSS overrides
 
@@ -26,6 +24,55 @@ $preview-header-border: darken($preview-header, 5%);
 
 .navbar .nav-link {
   font-size: .88rem;
+}
+
+// secondary navigation styling
+
+@media only screen and (min-width:992px) {
+
+  ul.dropdown-menu.dropdown-menu-end.show {
+    flex-direction: row;
+    padding: 5px 0 5px 26px !important;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -0.04rem;
+    font-size: 0.85rem;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 0%;
+    background-color: $posit-blue;
+    background: linear-gradient(0.25turn, #0088da, #007BC2);
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color:$posit-dark-blue-1 !important;
+    color: #fff !important;
+    border-radius: 5px;
+  }
+
+  .navbar .dropdown-item {
+    color: white;
+    padding: 0.7rem;
+  }
+
+  .navbar-sub-logo {
+    height: 22px;
+    width: auto;
+    margin-top: 11px;
+    margin-right: 4px;
+    margin-left: 30px;
+    border-right: 1px solid rgba(250, 250, 250, 0.6);
+    padding-right: 25px;
+  }
+
+  .navbar .dropdown-item>i.bi {
+    margin-right: 0.2em;
+  }
 }
 
 /* Footer */

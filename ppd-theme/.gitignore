@@ -1,5 +1,6 @@
 /.quarto/
 /_sites
+_site/*
 /_publish.yml
 _site/
 .cache
