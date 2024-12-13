@@ -1,4 +1,9 @@
 /.quarto/
-_site/*
-ppd-theme/_site/*
+/_sites
+/_publish.yml
+_site/
+.cache
+.quarto/
+.DS_Store
 _publish.yml
+__pycache__/
