@@ -36,6 +36,22 @@ $code-block-bg: #000000;
   color: $posit-orange !important;
 }
 
+// secondary navigation styling
+
+@media only screen and (min-width:992px) {
+
+  ul.dropdown-menu.dropdown-menu-end.show {
+    background-color: $posit-orange !important;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: $posit-orange !important;
+    color: #fff !important;
+    border-radius: 5px;
+  }
+}
+
 // Sidebar
 
 div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {

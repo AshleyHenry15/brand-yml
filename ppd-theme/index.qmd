@@ -6,6 +6,10 @@ title: "Posit Pro Product Doc Theme"
 
 Some text for level two.
 
+{{< include /_preview_text.qmd >}}
+
+
+
 [Test link](https://docs.posit.co)
 
 ### Level three
@@ -169,6 +173,11 @@ This is important; don't ignore this information.
 ::: {.callout-note collapse="true"}
 This is a collapsed note.
 :::
+
+::: {.callout-note appearance="simple"}
+This is a collapsed note.
+:::
+
 
 ::: {.callout-note}
 ## Some notes are not

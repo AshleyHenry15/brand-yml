@@ -1,24 +1,72 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "sharing.html",
+    "href": "sharing.html",
+    "title": "Sharing",
     "section": "",
-    "text": "About this site"
+    "text": "This is a stub page modeling a sub-page within the user guide.",
+    "crumbs": [
+      "Subsection",
+      "Sharing"
+    ]
+  },
+  {
+    "objectID": "install.html",
+    "href": "install.html",
+    "title": "Installation",
+    "section": "",
+    "text": "This is a stub page modeling a sub-page within the admin guide.",
+    "crumbs": [
+      "Subsection",
+      "Installation"
+    ]
+  },
+  {
+    "objectID": "user.html",
+    "href": "user.html",
+    "title": "Posit Product User Guide",
+    "section": "",
+    "text": "This is a stub page modeling a top-level collection of documentation, such as a product user guide.",
+    "crumbs": [
+      "Subsection",
+      "Duplicate"
+    ]
+  },
+  {
+    "objectID": "user.html#table",
+    "href": "user.html#table",
+    "title": "Posit Product User Guide",
+    "section": "Table",
+    "text": "Table\nThis table uses the bootstrap {.striped .hover} classes:\n\nThis table is using the striped + hover Bootstrap classes\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication\n\n\n\nThis table is not using any bootstrap classes:\n\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication",
+    "crumbs": [
+      "Subsection",
+      "Duplicate"
+    ]
+  },
+  {
+    "objectID": "user.html#images",
+    "href": "user.html#images",
+    "title": "Posit Product User Guide",
+    "section": "Images",
+    "text": "Images\nThe image caption, title, and alt text can all be different.\n\n\n\nThis is a test image",
+    "crumbs": [
+      "Subsection",
+      "Duplicate"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Posit Pro Product Doc Theme",
     "section": "",
-    "text": "Some text for level two.\nTest link\n\n\nSome text for level three and showing inline-code references.\n\n\n\nHere is a footnote reference,1 and another.\n\n\nFour levels deep. How far can we go?\n\n\nFive is jive.\n\n\nSix is deep enough! Stop!"
+    "text": "Some text for level two.\n\n\n\n\n\n\nPreview feature\n\n\n\nThis feature is in preview. Preview features are unsupported and may face breaking changes in a future release. Any issues found in the feature will be addressed during the regular release schedule; they will not result in immediate patches or hotfixes.\nWe encourage customers to try these features and we welcome any feedback via Posit Support, but we recommend that the feature not be used in production until it is in general availability (i.e., officially released as a full feature). To provide feedback, please email your Posit Customer Success representative or sales@posit.co and specify that you are trialing this feature.\n\n\nTest link\n\n\nSome text for level three and showing inline-code references.\n\n\n\nHere is a footnote reference,1 and another.\n\n\nFour levels deep. How far can we go?\n\n\nFive is jive.\n\n\nSix is deep enough! Stop!"
   },
   {
     "objectID": "index.html#level-two",
     "href": "index.html#level-two",
     "title": "Posit Pro Product Doc Theme",
     "section": "",
-    "text": "Some text for level two.\nTest link\n\n\nSome text for level three and showing inline-code references.\n\n\n\nHere is a footnote reference,1 and another.\n\n\nFour levels deep. How far can we go?\n\n\nFive is jive.\n\n\nSix is deep enough! Stop!"
+    "text": "Some text for level two.\n\n\n\n\n\n\nPreview feature\n\n\n\nThis feature is in preview. Preview features are unsupported and may face breaking changes in a future release. Any issues found in the feature will be addressed during the regular release schedule; they will not result in immediate patches or hotfixes.\nWe encourage customers to try these features and we welcome any feedback via Posit Support, but we recommend that the feature not be used in production until it is in general availability (i.e., officially released as a full feature). To provide feedback, please email your Posit Customer Success representative or sales@posit.co and specify that you are trialing this feature.\n\n\nTest link\n\n\nSome text for level three and showing inline-code references.\n\n\n\nHere is a footnote reference,1 and another.\n\n\nFour levels deep. How far can we go?\n\n\nFive is jive.\n\n\nSix is deep enough! Stop!"
   },
   {
     "objectID": "index.html#level-two-coding",
@@ -32,7 +80,7 @@
     "href": "index.html#level-two-callouts",
     "title": "Posit Pro Product Doc Theme",
     "section": "Level two: callouts",
-    "text": "Level two: callouts\nCode-first means using code first. Does that mean we never do things manually? No. Hands-on is delightful.\n\n\n\n\n\n\nNote\n\n\n\nThis is a note.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nExplains hazards that could damage a product, including data loss.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is important; don’t ignore this information.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nThis is a collapsed note.\n\n\n\n\n\n\n\n\n\nSome notes are not\n\n\n\nThis is a note with an alternate title."
+    "text": "Level two: callouts\nCode-first means using code first. Does that mean we never do things manually? No. Hands-on is delightful.\n\n\n\n\n\n\nNote\n\n\n\nThis is a note.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nExplains hazards that could damage a product, including data loss.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is important; don’t ignore this information.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nThis is a collapsed note.\n\n\n\n\n\n\n\n\n\nThis is a collapsed note.\n\n\n\n\n\n\n\n\n\nSome notes are not\n\n\n\nThis is a note with an alternate title."
   },
   {
     "objectID": "index.html#level-two-lists",
@@ -49,37 +97,12 @@
     "text": "Footnotes\n\n\nHere is the footnote.↩︎"
   },
   {
-    "objectID": "sharing.html",
-    "href": "sharing.html",
-    "title": "Sharing",
-    "section": "",
-    "text": "This is a stub page modeling a sub-page within the user guide.",
-    "crumbs": [
-      "User Guide",
-      "Subsection",
-      "Sharing"
-    ]
-  },
-  {
-    "objectID": "install.html",
-    "href": "install.html",
-    "title": "Installation",
-    "section": "",
-    "text": "This is a stub page modeling a sub-page within the admin guide.",
-    "crumbs": [
-      "Admin Guide",
-      "Subsection",
-      "Installation"
-    ]
-  },
-  {
     "objectID": "admin.html",
     "href": "admin.html",
     "title": "Posit Product Admin Guide",
     "section": "",
     "text": "This is a stub page modeling a top-level collection of documentation, such as a product admin guide.\nThis page should have a left-hand sidebar with repetitive links to the Installation page.",
     "crumbs": [
-      "Admin Guide",
       "Posit Product Admin Guide"
     ]
   },
@@ -90,44 +113,7 @@
     "section": "More",
     "text": "More\nYou may learn more.\n\nProblems\nYou may not learn more.\n\nSomething\nSomething\n\nSomething\nSomething\n\nSomething\n\nSomething\n\nSomething\n\n\n\n\nLists\nlists\nlists\n\nlists\nLists\n\nLists",
     "crumbs": [
-      "Admin Guide",
       "Posit Product Admin Guide"
-    ]
-  },
-  {
-    "objectID": "user.html",
-    "href": "user.html",
-    "title": "Posit Product User Guide",
-    "section": "",
-    "text": "This is a stub page modeling a top-level collection of documentation, such as a product user guide.",
-    "crumbs": [
-      "Admin Guide",
-      "Subsection",
-      "Duplicate"
-    ]
-  },
-  {
-    "objectID": "user.html#table",
-    "href": "user.html#table",
-    "title": "Posit Product User Guide",
-    "section": "Table",
-    "text": "Table\nThis table uses the bootstrap {.striped .hover} classes:\n\nThis table is using the striped + hover Bootstrap classes\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication\n\n\n\nThis table is not using any bootstrap classes:\n\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication",
-    "crumbs": [
-      "Admin Guide",
-      "Subsection",
-      "Duplicate"
-    ]
-  },
-  {
-    "objectID": "user.html#images",
-    "href": "user.html#images",
-    "title": "Posit Product User Guide",
-    "section": "Images",
-    "text": "Images\nThe image caption, title, and alt text can all be different.\n\n\n\nThis is a test image",
-    "crumbs": [
-      "Admin Guide",
-      "Subsection",
-      "Duplicate"
     ]
   }
 ]
