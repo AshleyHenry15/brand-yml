@@ -9,3 +9,4 @@ _site/
 _publish.yml
 __pycache__/
 ppd-theme/_site/*
+/ppd-theme/_site/*
