@@ -13,9 +13,9 @@ website:
       - text: Guides
         menu:
           - text: Admin
-            href: admin.qmd
+            href: guides/admin.qmd
           - text: User Guide
-            href: user.qmd
+            href: guides/user.qmd
     right:
       - text: docs.posit.co
         href: https://docs.posit.co
