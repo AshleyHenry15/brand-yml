@@ -115,5 +115,40 @@
     "crumbs": [
       "Posit Product Admin Guide"
     ]
+  },
+  {
+    "objectID": "guides/admin.html",
+    "href": "guides/admin.html",
+    "title": "Posit Product Admin Guide",
+    "section": "",
+    "text": "This is a stub page modeling a top-level collection of documentation, such as a product admin guide.\nThis page should have a left-hand sidebar with repetitive links to the Installation page."
+  },
+  {
+    "objectID": "guides/admin.html#more",
+    "href": "guides/admin.html#more",
+    "title": "Posit Product Admin Guide",
+    "section": "More",
+    "text": "More\nYou may learn more.\n\nProblems\nYou may not learn more.\n\nSomething\nSomething\n\nSomething\nSomething\n\nSomething\n\nSomething\n\nSomething\n\n\n\n\nLists\nlists\nlists\n\nlists\nLists\n\nLists"
+  },
+  {
+    "objectID": "guides/user.html",
+    "href": "guides/user.html",
+    "title": "Posit Product User Guide",
+    "section": "",
+    "text": "This is a stub page modeling a top-level collection of documentation, such as a product user guide."
+  },
+  {
+    "objectID": "guides/user.html#table",
+    "href": "guides/user.html#table",
+    "title": "Posit Product User Guide",
+    "section": "Table",
+    "text": "Table\nThis table uses the bootstrap {.striped .hover} classes:\n\nThis table is using the striped + hover Bootstrap classes\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication\n\n\n\nThis table is not using any bootstrap classes:\n\n\n\n\n\n\n\nHeader\nUsage\n\n\n\n\nX-CSRF-Token\nCSRF attack prevention when running or upgrading from 2022.09 and earlier releases\n\n\nX-Postback-ExitCode\nR processing\n\n\nX-RS-CSRF-Token\nCSRF attack prevention\n\n\nX-RS-Distributed-Event-Checksum\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Distributed-Event-Timestamp\nCommunication between nodes in a load balanced environment\n\n\nX-RS-Launcher-Secret\nInter-process communication with the Job Launcher\n\n\nX-RS-Monitor-Shared-Secret\nInter-process authentication"
+  },
+  {
+    "objectID": "guides/user.html#images",
+    "href": "guides/user.html#images",
+    "title": "Posit Product User Guide",
+    "section": "Images",
+    "text": "Images\nThe image caption, title, and alt text can all be different.\n\n\n\nThis is a test image"
   }
 ]
