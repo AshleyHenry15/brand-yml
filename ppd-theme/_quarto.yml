@@ -24,7 +24,7 @@ website:
   sidebar:
     - title: Admin Guide
       contents:
-        - admin.qmd
+        - guides/admin.qmd
         - section: Subsection
           contents:
             - text: Installation
@@ -42,7 +42,7 @@ website:
 
     - title: "User Guide"
       contents:
-        - user.qmd
+        - guides/user.qmd
         - section: Subsection
           contents:
             - text: Sharing
