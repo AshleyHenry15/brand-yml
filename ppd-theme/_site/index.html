@@ -65,17 +65,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./logos/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-eff1b255ce2439f1ec447362a78f458f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-c36fd32eb108a8579ea9cedeb3e24887.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-31891d09c41b252dff16e06451140997.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-1bf5931b3b85b8d74c60467847c06bb4.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bdf2797ee6499a17ea3a2265ef0983da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-09dfdabf0806047b3580846055542ef2.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-8a9cf9c4530830eb994b64ec2c63c0d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d7eccb7485161c1153637f632f333ace.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,6 +105,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"interstitial",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":"",
+"website_privacy_policy_url":"https://posit.co/privacy"
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 
 
 </head>
@@ -155,6 +176,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="https://support.posit.co/hc/en-us/"> 
 <span class="menu-text">Posit Support</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Products</span>
+    </span>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -538,7 +564,7 @@ Some notes are not
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Here is the footnote.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -1129,20 +1155,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </i> 
     </a>
   </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://solutions.posit.co/">
-      <i class="bi bi-lightbulb-fill" role="img" aria-label="Link to Posit Solutions">
-</i> 
-    </a>
-  </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://docs.posit.co/">
-<p><img alt="Link to Posit Documentation" src="assets/images/posit-guide-ltmd.svg" id="footer-right-logo"></p>
-</a>
+ <a href="#" id="open_preferences_center" title="Manage your cookie preferences"><i class="bi bi-cookie"></i></a>
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="https://posit.co/">
-<p><img alt="Link to main Posit site" src="assets/images/posit-icon-fullcolor.svg" id="footer-right-posit-logo"></p>
+<p><img alt="Link to main Posit site" src="./assets/images/posit-icon-fullcolor.svg" id="footer-right-posit-logo"></p>
 </a>
   </li>  
 </ul>

@@ -30,18 +30,21 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./guides/user.html" rel="prev">
 <link href="./logos/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-eff1b255ce2439f1ec447362a78f458f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-c36fd32eb108a8579ea9cedeb3e24887.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-31891d09c41b252dff16e06451140997.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-1bf5931b3b85b8d74c60467847c06bb4.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5500cc1c7a5d83c7de365dc09e5711da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-eeec74fea80813aaf658a3b2d5d781d5.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5f1378d5265b0f9f8e000c55b8ed3c7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-cc3069c0e6157ddc16a75572009b4775.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,8 +73,26 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"interstitial",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":"",
+"website_privacy_policy_url":"https://posit.co/privacy"
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 
-<link rel="stylesheet" href="secondary-menu.css">
+
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -104,11 +125,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guides">    
         <li>
-    <a class="dropdown-item" href="./admin.html">
+    <a class="dropdown-item" href="./guides/admin.html">
  <span class="dropdown-text">Admin</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./user.html">
+    <a class="dropdown-item" href="./guides/user.html">
  <span class="dropdown-text">User Guide</span></a>
   </li>  
     </ul>
@@ -149,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./user.html" class="sidebar-item-text sidebar-link">
+  <a href="./guides/user.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Posit Product User Guide</span></a>
   </div>
 </li>
@@ -210,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -779,6 +800,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./guides/user.html" class="pagination-link" aria-label="Posit Product User Guide">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Posit Product User Guide</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -796,20 +826,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </i> 
     </a>
   </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://solutions.posit.co/">
-      <i class="bi bi-lightbulb-fill" role="img" aria-label="Link to Posit Solutions">
-</i> 
-    </a>
-  </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://docs.posit.co/">
-<p><img alt="Link to Posit Documentation" src="assets/images/posit-guide-ltmd.svg" id="footer-right-logo"></p>
-</a>
+ <a href="#" id="open_preferences_center" title="Manage your cookie preferences"><i class="bi bi-cookie"></i></a>
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="https://posit.co/">
-<p><img alt="Link to main Posit site" src="assets/images/posit-icon-fullcolor.svg" id="footer-right-posit-logo"></p>
+<p><img alt="Link to main Posit site" src="./assets/images/posit-icon-fullcolor.svg" id="footer-right-posit-logo"></p>
 </a>
   </li>  
 </ul>

@@ -5,6 +5,12 @@ website:
   title: "Posit Docs"
   favicon: logos/favicon.svg
   bread-crumbs: true
+  back-to-top-navigation: true
+  cookie-consent:
+    type: express
+    style: interstitial
+    policy-url: https://posit.co/privacy
+  page-navigation: true
   navbar:
     logo: logos/posit-icon-fullcolor.svg
     left:
@@ -21,8 +27,9 @@ website:
         href: https://docs.posit.co
       - text: Posit Support
         href: https://support.posit.co/hc/en-us/
+      - text: Products
   sidebar:
-    - title: Admin Guide
+    - title: "Admin Guide"
       contents:
         - guides/admin.qmd
         - section: Subsection
@@ -58,12 +65,9 @@ website:
       - icon: question-circle-fill
         aria-label: 'Link to Posit Support'
         href: "https://support.posit.co/hc/en-us"
-      - icon: lightbulb-fill
-        aria-label: 'Link to Posit Solutions'
-        href: "https://solutions.posit.co/"
-      - text: "<img alt='Link to Posit Documentation' src='assets/images/posit-guide-ltmd.svg' id='footer-right-logo'>"
-        href: "https://docs.posit.co/"
-      - text: "<img alt='Link to main Posit site' src='assets/images/posit-icon-fullcolor.svg' id='footer-right-posit-logo'>"
+      - text: '<a href="#" id="open_preferences_center" title="Manage your cookie preferences"><i class="bi bi-cookie"></i></i></a>'
+        aria-label: 'Cookie Prefs'
+      - text: "<img alt='Link to main Posit site' src='/assets/images/posit-icon-fullcolor.svg' id='footer-right-posit-logo'>"
         href: "https://posit.co/"
 
 format:
@@ -74,6 +78,9 @@ format:
     toc: true
     link-external-icon: true
     link-external-newwindow: true
+    highlight-style: github
+    grid:
+      sidebar-width: 300px
 
 
 
