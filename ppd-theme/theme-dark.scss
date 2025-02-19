@@ -17,26 +17,30 @@ $body-color: $posit-light-gray-1;
 $preview-header: $posit-red; /* posit orange, contrast: 8.45 */
 $preview-header-border: darken($preview-header, 5%);
 
-
 /* Code block background */
 $code-block-bg: #000000;
 
-// Nav
+// CSS
+
+/* ======== General Styles ======== */
 
 p a {
-font-weight: 700;
-color: $posit-teal;
+  font-weight: 700;
+  color: $posit-teal;
 }
+    
+
+// Layout
 
 .navbar {
   background-color:#15181e !important;
   color: #dee2e6;
 }
-
+  
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: $posit-light-gray-1 !important;
 }
-
+  
 .navbar-nav .nav-link.active {
   color: $primary !important;
   font-weight: 700 !important;
@@ -46,8 +50,8 @@ color: $posit-teal;
   color: $primary !important;
 }
 
-// secondary navigation styling
-
+// Secondary navigation - styling
+  
 @media only screen and (min-width:992px) {
   .dropdown-menu {
     background-color: $posit-dark-teal-1 !important;
@@ -66,146 +70,11 @@ div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, 
   background-color: #2b303c;
   color: #fff !important;
 }
-
+  
 // Breadcrumbs
-
+  
 .quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
   color: #ffffff !important;
-}
-
-// Back to top
-
-
-// Back to top
-
-#quarto-back-to-top {
-  color: $primary !important;
-}
-
-// Tabs and pills
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color: $dark-md-background !important;
-}
-/* Tabs */
-
-.nav-tabs .nav-link.active {
-  color: $posit-teal !important;
-}
-
-.nav-tabs .nav-link {
-  text-transform: none !important;
-  //font-family: $font-family-sans-serif;
-  color: #ffffff !important;
-}
-
-.nav-tabs .nav-link:hover,
-.nav-link:focus {
-  color: $posit-teal !important;
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  text-decoration: none !important; 
-}
-/* Pills */
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: $posit-dark-teal-1 !important;
-}
-
-.nav-pills .nav-link:hover,
-.nav-link:focus {
-  isolation: isolate;
-  //  color: $posit-teal !important;
-  border: none !important;
-}
-
-.nav-pills .nav-link.active,
-.nav-link:hover {
-  color: #ffffff !important;
-}
-
-// Callouts
-
-.callout.callout-style-default:not(.no-icon) div.callout-title-container {
-  color: #ffffff !important;
-}
-
-div.callout.callout-style-default > div.callout-header {
-  opacity: none;
-}
-
-/* Note */
-
-div.callout-note.callout {
-  border-left-color: $posit-dark-blue-2 !important;
-  border-right: 1px solid $posit-dark-blue-2 !important;
-  border-top: 1px solid $posit-dark-blue-2 !important;
-  border-bottom: 1px solid $posit-dark-blue-2 !important;
-}
-
-div.callout-note .callout-icon::before {
-  // base64 -i _extensions/posit-docs/assets/images/info-circle-dm.svg
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWluZm8tY2lyY2xlIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik04IDE1QTcgNyAwIDEgMSA4IDFhNyA3IDAgMCAxIDAgMTRtMCAxQTggOCAwIDEgMCA4IDBhOCA4IDAgMCAwIDAgMTYiLz4KICA8cGF0aCBkPSJtOC45MyA2LjU4OC0yLjI5LjI4Ny0uMDgyLjM4LjQ1LjA4M2MuMjk0LjA3LjM1Mi4xNzYuMjg4LjQ2OWwtLjczOCAzLjQ2OGMtLjE5NC44OTcuMTA1IDEuMzE5LjgwOCAxLjMxOS41NDUgMCAxLjE3OC0uMjUyIDEuNDY1LS41OThsLjA4OC0uNDE2Yy0uMi4xNzYtLjQ5Mi4yNDYtLjY4Ni4yNDYtLjI3NSAwLS4zNzUtLjE5My0uMzA0LS41MzN6TTkgNC41YTEgMSAwIDEgMS0yIDAgMSAxIDAgMCAxIDIgMCIvPgo8L3N2Zz4=") !important;
-}
-
-div.callout-note.callout-style-default > .callout-header {
-  background-color: $posit-blue !important;
-}
-
-.callout-note .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
-  background-size: 1rem 1rem;
-  background-color: $posit-blue;
-  border-radius: 1rem;
-}
-
-/* Warning */
-
-div.callout-warning.callout {
-  border-left-color: $posit-dark-orange-2 !important;
-  border-right: 1px solid $posit-dark-orange-2 !important;
-  border-top: 1px solid $posit-dark-orange-2 !important;
-  border-bottom: 1px solid $posit-dark-orange-2 !important;
-}
-
-div.callout-warning .callout-icon::before {
-  // base64 -i _extensions/posit-docs/assets/images/exclamation-triangle-dm.svg
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWV4Y2xhbWF0aW9uLXRyaWFuZ2xlIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik03LjkzOCAyLjAxNkEuMTMuMTMgMCAwIDEgOC4wMDIgMmEuMTMuMTMgMCAwIDEgLjA2My4wMTYuMTUuMTUgMCAwIDEgLjA1NC4wNTdsNi44NTcgMTEuNjY3Yy4wMzYuMDYuMDM1LjEyNC4wMDIuMTgzYS4yLjIgMCAwIDEtLjA1NC4wNi4xLjEgMCAwIDEtLjA2Ni4wMTdIMS4xNDZhLjEuMSAwIDAgMS0uMDY2LS4wMTcuMi4yIDAgMCAxLS4wNTQtLjA2LjE4LjE4IDAgMCAxIC4wMDItLjE4M0w3Ljg4NCAyLjA3M2EuMTUuMTUgMCAwIDEgLjA1NC0uMDU3bTEuMDQ0LS40NWExLjEzIDEuMTMgMCAwIDAtMS45NiAwTC4xNjUgMTMuMjMzYy0uNDU3Ljc3OC4wOTEgMS43NjcuOTggMS43NjdoMTMuNzEzYy44ODkgMCAxLjQzOC0uOTkuOTgtMS43Njd6Ii8+CiAgPHBhdGggZD0iTTcuMDAyIDEyYTEgMSAwIDEgMSAyIDAgMSAxIDAgMCAxLTIgME03LjEgNS45OTVhLjkwNS45MDUgMCAxIDEgMS44IDBsLS4zNSAzLjUwN2EuNTUyLjU1MiAwIDAgMS0xLjEgMHoiLz4KPC9zdmc+") !important;
-}
-
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: $posit-dark-orange-1 !important;
-}
-
-.callout-warning .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
-  clip-path: polygon(50% 0%, 100% 90%, 0% 90%);
-  background-color: $posit-orange;
-}
-
-/* Important */
-
-div.callout-important.callout {
-  border-left-color: $posit-dark-burgundy-2 !important;
-  border-right: 1px solid $posit-dark-burgundy-2 !important;
-  border-top: 1px solid $posit-dark-burgundy-2 !important;
-  border-bottom: 1px solid $posit-dark-burgundy-2 !important;
-}
-
-div.callout-important .callout-icon::before {
-  // base64 -i _extensions/posit-docs/assets/images/exclamation-circle-dm.svg
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWV4Y2xhbWF0aW9uLWNpcmNsZSIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNOCAxNUE3IDcgMCAxIDEgOCAxYTcgNyAwIDAgMSAwIDE0bTAgMUE4IDggMCAxIDAgOCAwYTggOCAwIDAgMCAwIDE2Ii8+CiAgPHBhdGggZD0iTTcuMDAyIDExYTEgMSAwIDEgMSAyIDAgMSAxIDAgMCAxLTIgME03LjEgNC45OTVhLjkwNS45MDUgMCAxIDEgMS44IDBsLS4zNSAzLjUwN2EuNTUyLjU1MiAwIDAgMS0xLjEgMHoiLz4KPC9zdmc+") !important;
-}
-
-div.callout-important.callout-style-default > .callout-header {
-  background-color: $posit-burgundy !important;
-}
-
-.callout-important .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
-  background-size: 1rem 1rem;
-  background-color: $posit-burgundy;
-  border-radius: 1rem;
 }
 
 // Page navigation
@@ -213,6 +82,16 @@ div.callout-important.callout-style-default > .callout-header {
 .nav-page .nav-page-text {
   color: $posit-light-gray-1;
 }
+
+// Footer
+
+//* Footnote link *//
+
+.footnote-back {
+    color: $posit-light-blue-2;
+  }
+
+/* ======== Components ======== */
 
 // Code
 
@@ -247,8 +126,138 @@ div.sourceCode {
   border-radius: .25rem;
 }
 
-// Footnote link
 
-.footnote-back {
-  color: $posit-light-blue-2;
+// Tabs and pills
+  
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: $dark-md-background !important;
+}
+
+/* Tabs */
+  
+.nav-tabs .nav-link.active {
+  color: $posit-teal !important;
+}
+  
+.nav-tabs .nav-link {
+  text-transform: none !important;
+  //font-family: $font-family-sans-serif;
+  color: #ffffff !important;
+}
+  
+.nav-tabs .nav-link:hover,
+.nav-link:focus {
+  color: $posit-teal !important;
+}
+  
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  text-decoration: none !important; 
+}
+
+/* Pills */
+  
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $posit-dark-teal-1 !important;
+}
+  
+.nav-pills .nav-link:hover,
+.nav-link:focus {
+  isolation: isolate;
+  //  color: $posit-teal !important;
+  border: none !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-link:hover {
+  color: #ffffff !important;
+}
+  
+/* back-to-top button */
+
+#quarto-back-to-top {
+  color: $primary !important;
+}
+  
+
+// Callouts
+  
+.callout.callout-style-default:not(.no-icon) div.callout-title-container {
+    color: #ffffff !important;
+}
+  
+div.callout.callout-style-default > div.callout-header {
+  opacity: none;
+}
+  
+/* Note */
+
+div.callout-note.callout {
+  border-left-color: $posit-dark-blue-2 !important;
+  border-right: 1px solid $posit-dark-blue-2 !important;
+  border-top: 1px solid $posit-dark-blue-2 !important;
+  border-bottom: 1px solid $posit-dark-blue-2 !important;
+}
+
+div.callout-note .callout-icon::before {
+  // base64 -i _extensions/posit-docs/assets/images/info-circle-dm.svg
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWluZm8tY2lyY2xlIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik04IDE1QTcgNyAwIDEgMSA4IDFhNyA3IDAgMCAxIDAgMTRtMCAxQTggOCAwIDEgMCA4IDBhOCA4IDAgMCAwIDAgMTYiLz4KICA8cGF0aCBkPSJtOC45MyA2LjU4OC0yLjI5LjI4Ny0uMDgyLjM4LjQ1LjA4M2MuMjk0LjA3LjM1Mi4xNzYuMjg4LjQ2OWwtLjczOCAzLjQ2OGMtLjE5NC44OTcuMTA1IDEuMzE5LjgwOCAxLjMxOS41NDUgMCAxLjE3OC0uMjUyIDEuNDY1LS41OThsLjA4OC0uNDE2Yy0uMi4xNzYtLjQ5Mi4yNDYtLjY4Ni4yNDYtLjI3NSAwLS4zNzUtLjE5My0uMzA0LS41MzN6TTkgNC41YTEgMSAwIDEgMS0yIDAgMSAxIDAgMCAxIDIgMCIvPgo8L3N2Zz4=") !important;
+}
+
+div.callout-note.callout-style-default > .callout-header {
+  background-color: $posit-blue !important;
+}
+
+.callout-note .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
+  background-size: 1rem 1rem;
+  background-color: $posit-blue;
+  border-radius: 1rem;
+}
+
+/* Warning */
+
+div.callout-warning.callout {
+  border-left-color: $posit-dark-orange-2 !important;
+  border-right: 1px solid $posit-dark-orange-2 !important;
+  border-top: 1px solid $posit-dark-orange-2 !important;
+  border-bottom: 1px solid $posit-dark-orange-2 !important;
+}
+
+div.callout-warning .callout-icon::before {
+// base64 -i _extensions/posit-docs/assets/images/exclamation-triangle-dm.svg
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWV4Y2xhbWF0aW9uLXRyaWFuZ2xlIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik03LjkzOCAyLjAxNkEuMTMuMTMgMCAwIDEgOC4wMDIgMmEuMTMuMTMgMCAwIDEgLjA2My4wMTYuMTUuMTUgMCAwIDEgLjA1NC4wNTdsNi44NTcgMTEuNjY3Yy4wMzYuMDYuMDM1LjEyNC4wMDIuMTgzYS4yLjIgMCAwIDEtLjA1NC4wNi4xLjEgMCAwIDEtLjA2Ni4wMTdIMS4xNDZhLjEuMSAwIDAgMS0uMDY2LS4wMTcuMi4yIDAgMCAxLS4wNTQtLjA2LjE4LjE4IDAgMCAxIC4wMDItLjE4M0w3Ljg4NCAyLjA3M2EuMTUuMTUgMCAwIDEgLjA1NC0uMDU3bTEuMDQ0LS40NWExLjEzIDEuMTMgMCAwIDAtMS45NiAwTC4xNjUgMTMuMjMzYy0uNDU3Ljc3OC4wOTEgMS43NjcuOTggMS43NjdoMTMuNzEzYy44ODkgMCAxLjQzOC0uOTkuOTgtMS43Njd6Ii8+CiAgPHBhdGggZD0iTTcuMDAyIDEyYTEgMSAwIDEgMSAyIDAgMSAxIDAgMCAxLTIgME03LjEgNS45OTVhLjkwNS45MDUgMCAxIDEgMS44IDBsLS4zNSAzLjUwN2EuNTUyLjU1MiAwIDAgMS0xLjEgMHoiLz4KPC9zdmc+") !important;
+}
+
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: $posit-dark-orange-1 !important;
+}
+
+.callout-warning .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
+  clip-path: polygon(50% 0%, 100% 90%, 0% 90%);
+  background-color: $posit-orange;
+}
+
+/* Important */
+
+div.callout-important.callout {
+  border-left-color: $posit-dark-burgundy-2 !important;
+  border-right: 1px solid $posit-dark-burgundy-2 !important;
+  border-top: 1px solid $posit-dark-burgundy-2 !important;
+  border-bottom: 1px solid $posit-dark-burgundy-2 !important;
+}
+
+div.callout-important .callout-icon::before {
+  // base64 -i _extensions/posit-docs/assets/images/exclamation-circle-dm.svg
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIgY2xhc3M9ImJpIGJpLWV4Y2xhbWF0aW9uLWNpcmNsZSIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNOCAxNUE3IDcgMCAxIDEgOCAxYTcgNyAwIDAgMSAwIDE0bTAgMUE4IDggMCAxIDAgOCAwYTggOCAwIDAgMCAwIDE2Ii8+CiAgPHBhdGggZD0iTTcuMDAyIDExYTEgMSAwIDEgMSAyIDAgMSAxIDAgMCAxLTIgME03LjEgNC45OTVhLjkwNS45MDUgMCAxIDEgMS44IDBsLS4zNSAzLjUwN2EuNTUyLjU1MiAwIDAgMS0xLjEgMHoiLz4KPC9zdmc+") !important;
+}
+
+div.callout-important.callout-style-default > .callout-header {
+  background-color: $posit-burgundy !important;
+}
+
+.callout-important .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
+  background-size: 1rem 1rem;
+  background-color: $posit-burgundy;
+  border-radius: 1rem;
 }
