@@ -23,6 +23,11 @@ $code-block-bg: #000000;
 
 // Nav
 
+p a {
+font-weight: 900;
+color: $posit-teal;
+}
+
 .navbar {
   background-color:#15181e !important;
   color: #dee2e6;
