@@ -37,4 +37,4 @@ This table is not using any bootstrap classes:
 
 The image caption, title, and alt text can all be different.
 
-![This is a test image](/images/posit-logo-fullcolor-TM.svg "Title: Posit logo"){fig-alt="testing for alt text stuff" width=240 fig-align="left"}
+![This is a test image](/assets/images/posit-logo-fullcolor-TM.svg "Title: Posit logo"){fig-alt="testing for alt text stuff" width=240 fig-align="left"}

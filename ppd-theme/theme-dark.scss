@@ -4,14 +4,14 @@
 @import '_posit-colors';
 
 /*-- scss:variables --*/
-$primary: $posit-orange;
-$dark-md-body: $posit-light-gray-1;
-$dark-md-background: #000000;
+$primary: $posit-teal;
+$dark-md-body: #f0f3f6;
+$dark-md-background:#0a0c10;
 
 //$body-color: $posit-green !default;
 $body-bg: $dark-md-background !default; // dark mode change
 
-$body-color: #d5d7db;
+$body-color: $posit-light-gray-1;
 
 // Feature preview heading colors
 $preview-header: $posit-red; /* posit orange, contrast: 8.45 */
@@ -32,21 +32,24 @@ $code-block-bg: #000000;
   color: $posit-light-gray-1 !important;
 }
 
+.navbar-nav .nav-link.active {
+  color: $primary !important;
+  font-weight: 700 !important;
+}
+
 .nav-link:hover {
-  color: $posit-orange !important;
+  color: $primary !important;
 }
 
 // secondary navigation styling
 
 @media only screen and (min-width:992px) {
-
-  ul.dropdown-menu.dropdown-menu-end.show {
-    background-color: $posit-orange !important;
+  .dropdown-menu {
+    background-color: $posit-dark-teal-1 !important;
   }
-
   .dropdown-item:hover,
   .dropdown-item:focus {
-    background-color: $posit-orange !important;
+    background-color:  $posit-dark-teal-3 !important;
     color: #fff !important;
     border-radius: 5px;
   }
@@ -56,12 +59,67 @@ $code-block-bg: #000000;
 
 div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
   background-color: #2b303c;
+  color: #fff !important;
 }
 
-// Tab - Pills
+// Breadcrumbs
+
+.quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
+  color: #ffffff !important;
+}
+
+// Back to top
+
+
+// Back to top
+
+#quarto-back-to-top {
+  color: $primary !important;
+}
+
+// Tabs and pills
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: $dark-md-background !important;
+}
+/* Tabs */
+
+.nav-tabs .nav-link.active {
+  color: $posit-teal !important;
+}
+
+.nav-tabs .nav-link {
+  text-transform: none !important;
+  //font-family: $font-family-sans-serif;
+  color: #ffffff !important;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-link:focus {
+  color: $posit-teal !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  text-decoration: none !important; 
+}
+/* Pills */
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $posit-dark-teal-1 !important;
+}
+
+.nav-pills .nav-link:hover,
+.nav-link:focus {
+  isolation: isolate;
+  //  color: $posit-teal !important;
+  border: none !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-link:hover {
+  color: #ffffff !important;
 }
 
 // Callouts
@@ -92,6 +150,12 @@ div.callout-note.callout-style-default > .callout-header {
   background-color: $posit-blue !important;
 }
 
+.callout-note .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
+  background-size: 1rem 1rem;
+  background-color: $posit-blue;
+  border-radius: 1rem;
+}
+
 /* Warning */
 
 div.callout-warning.callout {
@@ -108,6 +172,11 @@ div.callout-warning .callout-icon::before {
 
 div.callout-warning.callout-style-default > .callout-header {
   background-color: $posit-dark-orange-1 !important;
+}
+
+.callout-warning .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
+  clip-path: polygon(50% 0%, 100% 90%, 0% 90%);
+  background-color: $posit-orange;
 }
 
 /* Important */
@@ -128,14 +197,47 @@ div.callout-important.callout-style-default > .callout-header {
   background-color: $posit-burgundy !important;
 }
 
-// Code blocks
+.callout-important .callout-icon::before, .callout.callout-style-simple .callout-toggle::before {
+  background-size: 1rem 1rem;
+  background-color: $posit-burgundy;
+  border-radius: 1rem;
+}
+
+// Page navigation
+
+.nav-page .nav-page-text {
+  color: $posit-light-gray-1;
+}
+
+// Code
+
+/* Inline code */
+p code:not(.sourceCode),
+li code:not(.sourceCode),
+td code:not(.sourceCode) {
+  background-color: #6e768166 !important;
+  color: #ffffff;
+}
+
+/* Code blocks */
 .code-with-filename strong {
   color: #ffffff;
   border: none !important;
 }
 
+.quarto-dark .code-with-filename .code-with-filename-file {
+  background-color: #15181e !important;
+}
+
+pre code:not(.sourceCode) {
+  background-color: #000000 !important;
+  color: #ffffff;
+  border: 1px solid #dee2e6 !important;
+  border-radius: .25rem;
+  padding: .4rem;
+}
+
 div.sourceCode {
-  background-color: #1a1a1a;
   border: 1px solid #dee2e6 !important;
   border-radius: .25rem;
 }
