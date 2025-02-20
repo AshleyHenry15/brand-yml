@@ -176,12 +176,7 @@ div.sourceCode, pre.console {
   text-decoration: none !important;
 }
 
-.nav-pills .nav-link:hover,
-.nav-link:focus {
-  isolation: isolate;
-  color: $posit-blue !important;
-  border: none !important;
-}
+
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
