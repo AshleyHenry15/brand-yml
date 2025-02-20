@@ -244,8 +244,8 @@ div.sourceCode {
 .nav-pills .nav-link:hover,
 .nav-link:focus {
   isolation: isolate;
-  //  color: $posit-teal !important;
-  border: none !important;
+  background-color: $posit-dark-teal-3;
+  color: #fff !important;
 }
 
 .nav-pills .nav-link.active,
