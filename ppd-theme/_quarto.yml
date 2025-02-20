@@ -76,11 +76,15 @@ format:
       light: [brand, styles.scss]
       dark: [brand, theme-dark.scss]
     toc: true
+    toc-expand: true
     link-external-icon: true
     link-external-newwindow: true
     highlight-style: github
     grid:
       sidebar-width: 300px
+    include-in-header: "assets/_analytics.html"
+    include-before-body: "assets/_analytics-body.html"
+
 
 
 
