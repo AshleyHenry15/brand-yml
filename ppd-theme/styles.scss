@@ -7,11 +7,11 @@
 $preview-header: $posit-red;
 $preview-header-border: darken($preview-header, 5%);
 
-// CSS overrides
+// CSS
 
-// Nav and footer
+/* ======== General Styles ======== */   
 
-/* Navbar */
+// Layout
 
 .navbar {
   box-shadow:
@@ -22,7 +22,7 @@ $preview-header-border: darken($preview-header, 5%);
     box-shadow 0.25s;
 }
 
-// secondary navigation styling
+// Secondary navigation - styling
 
 @media only screen and (min-width:992px) {
 
@@ -70,7 +70,21 @@ $preview-header-border: darken($preview-header, 5%);
   }
 }
 
-/* Footer */
+// Sidebar
+
+div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+  background-color: #F0F0F2;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-left: -2px;
+  padding: 6px;
+}
+  
+// Breadcrumbs
+
+// Page navigation
+
+// Footer
 
 .nav-footer {
   border-top: solid #0000001a 0.01em;
@@ -92,27 +106,23 @@ $preview-header-border: darken($preview-header, 5%);
   margin-bottom: 5px;
 }
 
-/* Sidebar */
+/* Footnote link */
 
-
-div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
-  background-color: #F0F0F2;
-  border-radius: 5px;
-  margin-bottom: 2px;
-  margin-left: -2px;
-  padding: 6px;
+.footnote-back {
+  color: $posit-dark-blue-2;
 }
 
-// Code blocks
+/* ======== Components ======== */
+
+// Code
+
+/* Inline code */
 
 /* Code blocks */
-
 .code-with-filename .code-with-filename-file {
   padding: .25rem;
   box-shadow: 0px 0px 2px rgba(5, 10, 15, .14), 0px 2px 4px rgba(29, 31, 33, .16);
 }
-
-
 
 div.sourceCode, pre.console {
   background-color: #fff;
@@ -124,6 +134,10 @@ div.sourceCode, pre.console {
   padding: .25rem;
 }
 
+// Tabs and pills
+
+/* Tabs */
+ 
 /* Pills */
 
 .nav-pills {
@@ -172,19 +186,6 @@ div.sourceCode, pre.console {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #ffffff !important;
-}
-
-
-// Mermaid diagrams
-
-#mermaid-1 .nodeLabel {
-  font-weight: 700!important;
-}
-
-// Footnote link
-
-.footnote-back {
-  color: $posit-dark-blue-2;
 }
 
 // Specialty headers
@@ -247,3 +248,15 @@ ol.groovyAlpha li > p:before {
   line-height: 16px;
   vertical-align: middle;
 }
+
+
+/* back-to-top button */
+
+// Callouts
+
+/* Note */
+
+/* Warning */
+
+/* Important */
+
