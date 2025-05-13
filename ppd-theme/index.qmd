@@ -135,6 +135,8 @@ $ dpkg
 
 ### SUSE
 
+test
+
 ```bash
 $ zypper
 ```
